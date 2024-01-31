@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    padding: 20px;
+    background-image: url(https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/08/hinh-nen-lap-top-cute-46.jpg);
+}
+
+.photo-column, .info-column {
+    flex: 1;
+}
+
+.photo-column {
+    max-width: 50%;
+    text-align: center;
+}
+
+.info-column {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-taobao-tmall-flat-blue-summer-on-new-banner-image_144472.jpg);
+    max-width: 50%; 
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .photo-column, .info-column {
+        max-width: 100%;
+    }
+
+    .info-column {
+        padding-left: 0;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url(https://i.pinimg.com/564x/2e/68/0d/2e680d985d7778ea9d82eb18d4b42d2b.jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+header, footer {
+    background-color: #6b3030;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin: 20px 0; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.photo-column, .info-column {
+    background-color: #f8f8f8; 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
